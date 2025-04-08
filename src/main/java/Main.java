@@ -1,12 +1,12 @@
 
 import java.util.Arrays;
 
-class Main {
+public class Main {
 
     public static void main(String[] args) {
         int[][] pile = {
             {1, 1, 1},
-            {1, 3, 1},
+            {3, 3, 1},
             {1, 1, 1}
         };
         System.out.println(Arrays.deepToString(SandFall.addSand(pile, 2)));
@@ -37,7 +37,7 @@ class Main {
             if (newPile[x][y] < MAX_SAND_CAPACITY) {
                 newPile[x][y] += 1;
             } else {
-                pile[x][y] = 0;
+                newPile[x][y] = 0;
                 for (int[] neighbor : NEIGHBORS) {
                     int nextX = x + neighbor[0];
                     int nextY = y + neighbor[1];
