@@ -19,6 +19,12 @@ SandFall simulates the behavior of sand piles on a grid, where each cell can hol
 mvn clean install
 ```
 
+### Running the project
+
+```bash
+mvn exec:java
+```
+
 ## Usage
 
 Here's a simple example of how to use the SandFall class:
